@@ -4,7 +4,7 @@ public class task112411 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int l = 0;
-        String[] mass = new String[10000], full = new String[1000];
+        String[] mass = new String[10000], full = new String[10000];
         while (sc.hasNext()) {
             String a = sc.nextLine();
             if (a.contains("0")) break;
@@ -12,7 +12,7 @@ public class task112411 {
             mass[l] = a.substring(a.indexOf(" ") + 1);
             l++;
         }
-        String[] sortmass = new String[l], fullsort = new String[l];
+        String[] sortmass = new String[l];
         for (int i = 0; i < l; i++) {
             sortmass[i] = mass[i] + " " + full[i];
         }
